@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- In Ordered List ; How to display roman number / alphabets ( other than the default Number when used with ol tag )
+Form elements : Select Radio Checkboxes textareas -->
+        <section>
+            <article>
+                <h2> Ordered and Unordered List</h2>
+                <div>
+                    <h3>Ordered List</h3>
+                    <ol type="I">
+                        <li value="3">One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                        <li>Five</li>
+                    </ol>
+
+                </div>
+                <div>
+                    <h3>Unordered List</h3>
+                    <ul type="circle"><!-- disc, square -->
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                        <li>Five</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </section> <br>
+        <hr>
+        <section>
+            <fieldset>
+                <legend>FORM</legend>
+                <form action="" method="get">
+
+                    <div>
+                        <label for="UserName">UserName </label>
+                        <input type="text" name="username" id="UserName" placeholder=" Kira " required maxlength="4">
+                    </div>
+                    <div>
+                        <label for="Password">Password</label>
+                        <input type="password" name="password" id="Password" placeholder="ASFDF@12471" required>
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="Email" placeholder="" required>
+                    </div>
+                    <div>
+                        <label for="PhNo">Ph No</label>
+                        <input type="number" name="PhNo " id="PhNo" maxlength="4">
+                    </div>
+                    <div>
+                        <label for="Dob">DOB </label>
+                        <input type="date" name="dateofbirth" id="Dob">
+                    </div>
+                    <div>
+                        <label for="Url">URL</label>
+                        <input type="url" name="url" id="Url" required>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="alert" id="alert">
+                        <label for="alert">SMS</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male" >
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <select name="state" id="State" multiple>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Kerala" label="Kerala"></option>
+                            <option value="bangalore">Bangalore</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="file">Upload File</label>
+                        <input type="file" name="File" id="file">
+                    </div><br>
+                    <div>
+                        <textarea name="About" id="About" cols="30" rows="10">...!</textarea>
+                        <label for="About">About</label>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+
+
+
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
