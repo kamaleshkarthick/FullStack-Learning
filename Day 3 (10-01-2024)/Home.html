@@ -31,7 +31,22 @@ Form elements : Select Radio Checkboxes textareas -->
                     <ul type="circle"><!-- disc, square -->
                         <li>One</li>
                         <li>Two</li>
-                        <li>Three</li>
+                        <li>Three
+                            <ol>
+                                <li>One</li>
+                                <li>Two</li>
+                                <li>Three</li>
+                                <li>Four</li>
+                                <ul>
+                                    <li>One</li>
+                                    <li>Two</li>
+                                    <li>Three</li>
+                                    <li>Four</li>
+                                    <li>Five</li>
+                                </ul>
+                                <li>Five</li>
+                            </ol>
+                        </li>
                         <li>Four</li>
                         <li>Five</li>
                     </ul>
@@ -75,7 +90,7 @@ Form elements : Select Radio Checkboxes textareas -->
                         <label for="alert">SMS</label>
                     </div>
                     <div>
-                        <input type="radio" name="gender" id="male" value="male" >
+                        <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Male</label>
                     </div>
                     <div>
@@ -105,6 +120,113 @@ Form elements : Select Radio Checkboxes textareas -->
 
                 </form>
             </fieldset>
+        </section>
+        <section>
+            <h3>we using form inside the form</h3>
+            <form>
+                <fieldset>
+                    <legend> Table inside Form</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Name</label>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Email</label>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Age</label>
+                            </td>
+                            <td>
+                                <input type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Country</label>
+                            </td>
+                            <td>
+                                <input type="text" value="India" name="country" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Password</label>
+                            </td>
+                            <td>
+                                <input type="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Hobbies</label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="checkbox"> Cricket
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Football
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Gender</label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="gender"> Female</label>
+                                <label>
+                                    <input type="radio" name="gender"> Male</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city">City</label>
+                            </td>
+                            <td>
+                                <select id="city" name="city">
+                                    <option> </option>
+                                    <option>New Delhi</option>
+                                    <option>Mumbai</option>
+                                    <option>Channai</option>
+                                    <option>Salem</option>
+                                    <option>Bangalore</option>
+                                    <option>Coimbature</option>
+                                    <option>Madurai</option>
+                                    <option>Naamakal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Address</label>
+                            </td>
+                            <td>
+                                <textarea rows="4" cols="40"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit">
+                                <input type="reset">
+                                <button type="button">Check</button>
+                            </td>
+                        </tr>
+                    </table>
+            </form>
         </section>
 
     </main>
