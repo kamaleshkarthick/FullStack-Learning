@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    background-color: rgb(237, 237, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 1.5rem; */
+}
+
+#header {
+    border-bottom: 1px solid rgb(95, 63, 255);
+    padding: 10px;
+}
+
+#section {
+    margin-top: 10px;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#footer a {
+    text-decoration: none;
+}
+
+.heading {
+    color: rgb(92, 92, 235);
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+#mainhead {
+    color: rgb(92, 92, 235);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
