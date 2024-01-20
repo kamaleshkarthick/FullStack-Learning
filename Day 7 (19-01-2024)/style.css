@@ -1,0 +1,102 @@
+     *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    main{
+        
+        display: flex ;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+        
+    }
+    main >*{
+    
+        padding: 1rem;
+        text-align: center;
+        
+    }
+
+   
+    /*  For Desktop: */ 
+    @media (min-width:787px) and (max-width:1922px){
+        .header{
+            width: 100vw;
+            background-color:lightcoral;
+        }
+        .main-content{
+            order:2 ;
+             width: 60vw;
+             height: 100vh;
+            background-color:rgb(216, 216, 216);
+        }
+        .left{
+            order:1 ;
+             width: 20vw;
+            background-color:rgb(240, 223, 128);
+        }
+        .right{
+            order: 3;
+            /* height: 50vh; */
+             width:20vw;
+             /* width:19vw; */
+            background-color:rgb(141, 240, 128);
+        }
+        .footer{
+            order:4 ;
+            width: 100vw;
+            background-color:rgb(128, 191, 240);
+        }
+
+
+    }
+ /*  For Tablet: */ 
+    @media (min-width:500px)and (max-width:786px){
+        .header{
+            width: 100vw;
+            background-color:lightcoral;
+        }
+        .main-content{
+             width: 100vw;
+             height: 50vh;
+            background-color:rgb(216, 216, 216);
+        }
+        .left{
+             width: 50vw;
+            background-color:rgb(240, 223, 128);
+        }
+        .right{
+             width: 50vw;
+            background-color:rgb(141, 240, 128);
+        }
+        .footer{
+            width: 100vw;
+            background-color:rgb(128, 191, 240);
+        }
+
+
+    }
+/* Mobile */
+    @media  (max-width:499px){
+        .header{
+        width: 100vw;
+        background-color:lightcoral;
+    }
+    .main-content{
+         width: 100vw;
+        background-color:rgb(216, 216, 216);
+    }
+    .left{
+         width: 100vw;
+        background-color:rgb(240, 223, 128);
+    }
+    .right{
+         width: 100vw;
+        background-color:rgb(141, 240, 128);
+    }
+    .footer{
+        width: 100vw;
+        background-color:rgb(128, 191, 240);
+    }
+}
+
