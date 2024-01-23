@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.card-container{
+ display: flex;
+ flex-wrap: wrap; 
+ text-align: center;
+ width: 100vw;
+ height: 50vw;
+ align-items: center;
+ justify-content: space-around;
+ gap: 10px;
+}
+.card{
+    background-color: rgb(115, 142, 249);
+    padding: 20px;
+    width: 300px;
+    border-radius: 6px;
+    /* height:30vh ; */
+}
+.item-1,.item-2,.item-3{
+    background-color: rgb(234, 146, 252);
+    padding: 20px;
+    border-radius: 8px;
+    /* height: 50vh; */
+}
+
+ button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(146, 253, 146);
+}
