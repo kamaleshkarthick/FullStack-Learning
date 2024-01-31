@@ -1,0 +1,23 @@
+
+.carousel-item{
+    height: 60vh;
+}
+.card-img-top{
+    background-size: cover;
+    object-fit: cover;
+    /* object-position: 50% 50%; */
+}
+.card{
+    background-size: cover;
+    object-fit: cover;
+    /* object-position: 50% 50%; */
+}
+.carousel{
+    margin-bottom: 5rem;
+}
+.featurette-divider{
+    margin: 4rem 0rem;
+}
+.cont-lin{
+    margin-top: 100px;
+}
