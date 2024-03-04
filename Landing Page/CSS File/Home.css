@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100vw;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+}
+
+.nav {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-area img {
+    color: rgb(89, 29, 255);
+}
+
+.nav-ctn {
+    position: sticky;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-ctn li {
+    margin-right: 32px;
+}
+
+.nav-ctn li,
+.nav-ctn a {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+
+/* -------------------- */
+/* 
+.carousel-main-ctn {
+    width: 100vw;
+    height: 500px;
+} */
+
+
+
+/* --------------------------------------------- */
+/* section area */
+.section-ctn {
+    padding: 30px 160px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-ctn * {
+    margin: 15px;
+}
+
+.card-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-area i {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+/*  */
+
+.sec-img-ctn {
+    width: 100vw;
+    height: 300px;
+    padding: 120px 20px 20px;
+    text-align: center;
+    color: white;
+    background: url('../img/carousel1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sec-img-ctn * {
+    margin-bottom: 20px;
+}
+
+/*  */
+.sec-card-ctn {
+    padding: 20px 60px;
+}
+
+/* Footer */
+.news-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: rgb(46, 56, 66);
+}
+
+.news-ctn * {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.news-ctn p {
+    padding: 0px 12vw;
+    text-align: center;
+}
+
+.news-ctn form {
+    margin: 0;
+}
+
+.news-ctn input {
+    margin-right: 10px;
+    border-style: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.news-ctn button {
+    border-style: none;
+    width: 150px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: rgb(92, 92, 228);
+}
+
+.foot-ctn {
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+.foot-ctn * {
+    margin-bottom: 20px;
+}
+.soc-icon{
+    display: inline-block;
+    
+}
+.soc-icon *{
+    margin: 0px 30px ;
+    
+}
