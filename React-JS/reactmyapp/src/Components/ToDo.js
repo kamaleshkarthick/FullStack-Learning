@@ -46,7 +46,7 @@ const TodoComponent = () => {
       .then((Data) => setData(Data))
       .catch((err) => console.log(`Error for the API ${err}`));
   };
-
+ 
   return (
     <>
       <h1> Welcome to list</h1>
@@ -58,15 +58,30 @@ const TodoComponent = () => {
 
 export const ToDo = (props) => {
   console.log(props);
-  const [remov, setRemove] = useState(props.tododata);
-  console.log(remov);
+  const [data, setData] = useState(props.tododata);
+  console.log(data);
   const Deleting = (id) => {
-    // const newItems = remov.filter((item) => item.id !== prop.id)
+    // const newItems = data.filter((item) => item.id !== prop.id)
 
-    setRemove(remov.filter((item) => item.id !== id));
+    setData(data.filter((item) => item.id !== id));
     // console.log(newItems)
     console.log(id);
   };
+  const handleOnChange = (e) => {
+    const target = e.target;
+    const checkboxidx = target.attributes.checkindex.value;
+    console.log(checkboxidx);
+    console.log("checked");
+    const newToggle = [...data];
+    newToggle[checkboxidx].completed = target.checked;
+    // setData(newToggle)
+    setData((prevState) => {
+      console.log("pervdata"+prevState)
+      return [ ...newToggle];
+    });
+  };
+
+
   return (
     <>
       <div>
@@ -76,14 +91,24 @@ export const ToDo = (props) => {
             <tr>
               <th>ID</th>
               <th>TITLE</th>
+              <th>Status</th>
               <th>DELET</th>
             </tr>
           </thead>
           <tbody>
-            {remov.map((tododt, index) => (
+            {data.map((tododt, index) => (
               <tr key={index}>
                 <td>{tododt.id} </td>
                 <td>{tododt.title} </td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="Check"
+                    checkindex={index}
+                    checked={tododt.completed}
+                    onChange={(e) => handleOnChange(e)}
+                  />
+                </td>
                 <td>
                   <button onClick={() => Deleting(tododt.id)}>Delet</button>
                 </td>
