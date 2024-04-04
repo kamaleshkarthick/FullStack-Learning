@@ -70,8 +70,8 @@ export const ToDo = (props) => {
   const handleOnChange = (e) => {
     const target = e.target;
     const checkboxidx = target.attributes.checkindex.value;
-    console.log(checkboxidx);
-    console.log("checked");
+    // console.log(checkboxidx);
+    // console.log("checked");
     const newToggle = [...data];
     newToggle[checkboxidx].completed = target.checked;
     // setData(newToggle)
