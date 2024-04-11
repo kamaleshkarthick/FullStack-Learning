@@ -8,7 +8,8 @@ const Rootlayouts = () => {
   return (
     <>
       <Navbar />
-      <BreadCrumbs/>
+      <BreadCrumbs />
+      <h5>Rootlayout of Home</h5>
       <Outlet />
     </>
   );

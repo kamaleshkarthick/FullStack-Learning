@@ -5,6 +5,7 @@ const ic = document.querySelector('.icon')
 const desc = document.querySelector('.description')
 const hum = document.querySelector('.humidity')
 const win = document.querySelector('.wind')
+
 let weather_result = {
   fetch_weather: function (city) {
     fetch(
