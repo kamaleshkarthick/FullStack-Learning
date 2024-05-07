@@ -24,7 +24,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Rootlayouts />}>
       <Route index element={<Home />} />
       <Route path="About" element={<About />} />
-      <Route path="About" element={<Contact />} />
+      {/* <Route path="About" element={<Contact />} /> */}
 
       {/* Nested Routing */}
       <Route path="Contact" element={<Contactlayout />}>

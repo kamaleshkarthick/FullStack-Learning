@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 // import { CartContext } from '../contexts/CartContext'
 
 
-const Product = ({ product }) => {
+const Product = ({ product } ) => {
     //   const { addCart } = useContext(CartContext)
   
     const {id, image, category, title, price} = product;

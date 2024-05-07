@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 export const ProductsContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
