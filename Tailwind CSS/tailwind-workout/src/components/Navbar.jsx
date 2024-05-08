@@ -46,7 +46,7 @@ const Navbar = () => {
                 <a href="#">Fruits</a>
               </li>
               <li className="navitem ">
-                <a href="">Vegetable</a>
+                <a href="">Vegetables</a>
               </li>
               <li className=" navitem">
                 <a href="#">More</a>
