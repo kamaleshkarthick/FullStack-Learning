@@ -32,5 +32,17 @@ const server = http.createServer((req, res) => {
     </html>`)
      return res.end();
     }
+
+    res.setHeader('Content-type', 'text/html');
+    res.write(`<html>
+    <head>
+    <title> Node Js</title>
+    </head> 
+    <body>
+    <h1>Hi, e</h1>
+    </body>
+    
+    </html>`)
+     res.end();
 });
 server.listen(4000);
