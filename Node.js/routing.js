@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const { buffer } = require("stream/consumers");
 
 const server = http.createServer((req, res) => {
   
@@ -38,6 +39,16 @@ const server = http.createServer((req, res) => {
   //   }
   
   if (url == '/welcome' && method == 'POST') {
+   
+    const body = [];
+    req.on("data", (data) => {
+      body.push(data);
+    })
+    req.on("end", () => {
+      const parseBody = Buffer.concat(body).toString();
+      console.log(parseBody);
+     })
+
      fs.writeFileSync('hello.txt','Hello faafaf')
 
     res.setHeader('Location', '/');
