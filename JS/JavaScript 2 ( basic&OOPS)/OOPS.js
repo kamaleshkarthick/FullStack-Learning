@@ -28,6 +28,8 @@
 // base class, parent class, Super class
 class user {
   static numberofusers = 0;
+  name;
+  age;
   constructor(name, age) {
     this.name = name;
     this.age = age;
