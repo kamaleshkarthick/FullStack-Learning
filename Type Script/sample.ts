@@ -15,6 +15,8 @@ function logmethod(target: any, propertyKey: string, descriptor: PropertyDescrip
         const result = orignalmethod.apply(this, args)
         console.log(`Result : ${result}`)
         return result;
+
+        
     }
 }
 
