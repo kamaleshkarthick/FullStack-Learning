@@ -39,6 +39,7 @@ const router = createBrowserRouter(
               <Link to="mail">Mail</Link>
               <br />
               <Link to="Phone">Phone No</Link>
+              <outlet/>
             </>
           }
         />
@@ -49,7 +50,7 @@ const router = createBrowserRouter(
       {/* Api calling */}
       <Route path="dashboard" element={<Dashboardlayout />}>
         <Route index element={<Product />} loader={Productloader} errorElement={<><h2>Something went wrong</h2> </>} />
-        <Route path="product/:id"  element={<ProductDetail/>} loader={Productitem} errorElement={<> <h3> Id id not coming</h3></>} />
+        <Route path="product/love/:k"  element={<ProductDetail/>} loader={Productitem} errorElement={<> <h3> Id id not coming</h3></>} />
       </Route>
 
       {/* Page Not Found */}

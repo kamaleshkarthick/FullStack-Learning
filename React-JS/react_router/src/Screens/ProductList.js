@@ -8,8 +8,8 @@ const ProductList = ({ id, title, price, category }) => {
         <td>{id}</td>
         <td>{title}</td>
         <td>{price}</td>
-        <td>{category}</td>
-        <td> <Link to={`product/${id.toString()}`}>{ category}</Link> </td>
+        {/* <td>{category}</td> */}
+        <td> <Link to={`product/love/${id.toString()}`}>{ category}</Link> </td>
       </tr>
     </>
   );

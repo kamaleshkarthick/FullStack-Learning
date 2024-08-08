@@ -23,22 +23,23 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
   
-  //  else if (url === "/welcome" && method ==="POST") {
+   if (url === "/welcome" && method ==="POST") {
       
-  //   res.setHeader('Content-type', 'text/html');
-  //   res.write(`<html>
-  //   <head>
-  //   <title> Node Js</title>
-  //   </head> 
-  //   <body>
-  //   <h1>Hi, Welcome to page</h1>
-  //   </body>
+    res.setHeader('Content-type', 'text/html');
+    res.write(`<html>
+    <head>
+    <title> Node Js</title>
+    </head> 
+    <body>
+    <h1>Hi, Welcome to page</h1>
+    </body>
     
-  //   </html>`)
-  //    return res.end();
-  //   }
+    </html>`)
+    // res.end()
+     return res.end();
+    }
   
-  if (url == '/welcome' && method == 'POST') {
+  /* if (url == '/welcome' && method == 'POST') {
    
     const body = [];
     req.on("data", (data) => {
@@ -55,14 +56,15 @@ const server = http.createServer((req, res) => {
     res.statusCode = 302;
    return res.end();
   }
-  
+   */
+
     res.setHeader('Content-type', 'text/html');
     res.write(`<html>
     <head>
     <title> Node Js</title>
     </head> 
     <body>
-    <h1>Hi, e</h1>
+    <h1>Hi,There Node.js</h1>
     </body>
     
     </html>`)

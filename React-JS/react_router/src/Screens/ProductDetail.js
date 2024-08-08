@@ -34,9 +34,9 @@ const ProductDetail = () => {
 }
 
 export const Productitem = async ({params}) => {
-  const { id } = params;
+  const { kk } = params;
   // console.log(params)
-  const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+  const res = await fetch(`https://fakestoreapi.com/products/${kk}`);
   const data = await res.json();
   return data;
   

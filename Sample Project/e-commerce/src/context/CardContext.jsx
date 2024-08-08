@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export const cardContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 const CardProvider = ({ children }) => {
   const [card, setCard] = useState([]);
   const [itemAmount, setItemAmount] = useState(0);
