@@ -50,7 +50,7 @@ const server = http.createServer((req, res) => {
       console.log(parseBody);
      })
 
-     fs.writeFileSync('hello.txt','Hello faafaf')
+     fs.writeFileSync('hello.txt','Hello there')
 
     res.setHeader('Location', '/');
     res.statusCode = 302;
