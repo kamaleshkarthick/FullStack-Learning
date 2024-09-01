@@ -1,23 +1,23 @@
 import express from "express";
 import bodyParser from "body-parser";
-// import path from 'path';
+import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from "url";
 
-const __pathname = dirname(fileURLToPath(import.meta.url));
-// console.log(import.meta.url);
-// console.log(fileURLToPath(import.meta.url));
-// console.log(__pathname)
+const __pathname = dirname(import.meta.filename);
+console.log(import.meta.filename);
+console.log(fileURLToPath(import.meta.url));
+console.log(__pathname)
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get("/", (req, res) =>{
   
-  res.sendFile(__pathname + "/public/index.html")
-  // res.sendFile(path.join(__pathname, '.','public','index.html'))
+  // res.sendFile(__pathname , '..', "/public/index.html")
+  res.sendFile(path.join(__pathname, '..','public','index.html'))
 })
 app.post("/submit", (req, res) =>{
   
